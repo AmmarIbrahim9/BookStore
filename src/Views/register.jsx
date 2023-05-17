@@ -26,10 +26,10 @@ function App() {
 
 
           <MDBInput wrapperClass='mb-4' label='Username' id='formControlLg' type='text' size="lg"/>
-          <MDBInput wrapperClass='mb-4' label='Address' id='formControlLg' type='text' size="lg"/>
           <MDBInput wrapperClass='mb-4' label='Email' id='formControlLg' type='email' size="lg"/>
-          <MDBInput wrapperClass='mb-4' label='Phone Number' id='formControlLg' type='text' size="lg"/>
           <MDBInput wrapperClass='mb-4' label='Password' id='formControlLg' type='password' size="lg"/>
+          <MDBInput wrapperClass='mb-4' label='Address' id='formControlLg' type='text' size="lg"/>
+          <MDBInput wrapperClass='mb-4' label='Phone Number' id='formControlLg' type='text' size="lg"/>
     
 
           <div className="d-flex justify-content-between mx-4 mb-4">
