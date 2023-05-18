@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './login.css';
+import { Link } from 'react-router-dom';
 import {
   MDBNavbar,
   MDBContainer,
@@ -18,7 +19,8 @@ export default function App() {
   const [showNavColorThird, setShowNavColorThird] = useState(false);
 
   return (
-    <>
+  
+      <>
 
       <MDBNavbar expand='lg' light  className='gradient-custom-2'> 
       {/* style={{ backgroundColor: '#e3f2fd' }} */}
@@ -38,22 +40,27 @@ export default function App() {
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
               <MDBNavbarItem className='active' >
                 <MDBNavbarLink aria-current='page' href='#' style={{color:'#FFFFFF'}} >
-                  Home
+                  
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#' style={{color:'#FFFFFF'}}>Features</MDBNavbarLink>
+              <Link to= '/register'>
+                <MDBNavbarLink href='#' style={{color:'#FFFFFF'}}>Register</MDBNavbarLink>
+               </Link>
               </MDBNavbarItem>  
               <MDBNavbarItem>
-                <MDBNavbarLink href='#' style={{color:'#FFFFFF'}}>Pricing</MDBNavbarLink>
+               <Link to= '/login'>
+                <MDBNavbarLink href='#' style={{color:'#FFFFFF'}}>Login</MDBNavbarLink>
+                </Link>
               </MDBNavbarItem>
               <MDBNavbarItem > 
-                <MDBNavbarLink href='#' className='d-flex w-auto mb-3' style={{color:'#FFFFFF'}}>About</MDBNavbarLink>
+                <MDBNavbarLink href='#' className='d-flex w-auto mb-3' style={{color:'#FFFFFF'}}></MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBContainer>
       </MDBNavbar>
     </>
+
   );
 }

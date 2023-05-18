@@ -10,7 +10,9 @@ import Main from './Views/Main';
 
 
 function App() {
+<Login/>
   return (
+   
   <Router>
     <Navbar/>
     <Switch>
